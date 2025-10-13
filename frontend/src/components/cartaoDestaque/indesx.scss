@@ -1,0 +1,28 @@
+.cartaoDestaque{
+    display: flex;
+    gap: 12px;
+    padding: 12px;
+    border-radius: 12px;
+    background-color: #F2C091;
+
+    .imagem{
+        width: 620px;
+        height: 260px;
+        border-radius: 12px;
+        
+
+        img { 
+            width: 620px;
+            height: 260px;
+            border-radius: 12px;
+    }
+}
+    .direita {
+        order: 1;
+        margin-left: 700px;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+}

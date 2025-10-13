@@ -1,0 +1,23 @@
+.footer {
+
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px;
+    background-color: hsl(22, 54%, 39%);
+    height: 150px;
+
+    .rodape {
+        display: flex;
+        justify-content: space-between;
+
+        h2{
+            font-size: 17px;
+        }
+        h3{
+            font-size: 13px;
+        }
+        
+    }
+}

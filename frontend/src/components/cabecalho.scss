@@ -1,0 +1,32 @@
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .nav {
+        display: flex;
+        gap: 30px;
+        padding: 30px;
+
+        a {
+            padding: 10px 20px;
+            background-color: #a55b2a;
+            border-radius: 12px;
+            color: white;
+            text-decoration: none;
+        }
+
+        a:hover{
+            background-color: hsl(24, 58%, 35%);
+            transform: scale(1.1);
+        }
+
+    }
+
+}
+
+.linha {
+    width: 100%;
+    height: 4px;
+    background-color: #a55b2a;
+}
