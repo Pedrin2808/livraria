@@ -1,0 +1,14 @@
+.main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    .altura {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        flex-grow: 1;
+
+    }
+}
