@@ -7,17 +7,24 @@ export default function Sobre() {
         <div className="main">
             <div className="altura">
             <Cabecalho />
+
             <div className="corpo">
 
             <div className="inputs">
-                <label htmlFor="">Usuario</label>
-                <input className="usuario" type="text" />
 
-                <label htmlFor="">Senha</label>
-                <input className="password" type="text" />
+                <label>Usuário</label>
+                <input className="usuario" type="text"/>
+
+                <label>Senha</label>
+                <input type="password"/>
+
             </div>
             </div>
-            <button className="butao">Entrar</button>
+
+            <div className="butao">
+            <button>Entrar</button>
+            </div>
+
             </div>
 
             <Footer />
