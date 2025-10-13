@@ -1,6 +1,6 @@
-import * as repo from '.LoginRepository.js';
+import * as repo from '../repository/LoginRepository.js';
 
-import { generateToken } from '..jwt.js'
+import { generateToken } from '../utils/jwt.js'
 
 import { Router } from "express";
 const endpoints = Router();

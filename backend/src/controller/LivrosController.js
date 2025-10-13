@@ -1,4 +1,4 @@
-import * as repo from '.LivrosRepository.js';
+import * as repo from '../repository/LivrosRepository.js';
 
 import { Router } from "express";
 const endpoints = Router();
