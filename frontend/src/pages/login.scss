@@ -1,14 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
 .main {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    gap: 12px;
 
-    .altura {
+    .corpo{
+        margin-top: 50px;
         display: flex;
         flex-direction: column;
-        gap: 12px;
-        flex-grow: 1;
+        justify-content: center;
+        align-items: center ;
+        .inputs{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
 
+            .usuario{
+                margin-bottom: 50px;
+            }
+            .inputs{
+                width: 800px;
+                height: 40px;
+                border-radius: 12px;
+                background-color: #F2C091;
+                border: 3px solid #a55b2a
+            }
+        }
+
+    }
+    .butao{
+        display: flex;
+        justify-content: flex-end;
+        width: 1020px;
+    }
+    button{
+        margin-top: 50px;
+        width: 150px;
+        height: 40px;
+        border-radius: 12px;
+        background-color: #F2C091;
+        border: 3px solid #a55b2a
+    }
+
+    .altura {
+        flex-grow: 1;
     }
 }
