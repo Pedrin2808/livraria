@@ -3,25 +3,10 @@ import { useNavigate } from "react-router";
 import api from "../api";
 import Cabecalho from "../components/cabecalho";
 import Footer from "../components/footer";
-import CartaoDestaque from "../components/cartaoDestaque/index";
+import CartaoDestaque from "../components/CartaoDestaque";
 import './inicio.scss';
 
-const cartoes =
-    [
-        {
-            "imagem": "https://st2.depositphotos.com/1163454/6060/v/450/depositphotos_60602675-stock-illustration-superhero-watch-2.jpg",
-            "titulo": "Livro Super Herois",
-            "descricao": "Em nossa livraria você vai encontrar livros de diversos heróis da atualidade!",
-            "imgDireita": false,
-            "linkDetalhe": "https://google.com"
-        }, {
-            "imagem": "https://images.vexels.com/media/users/3/284650/raw/25f925b741c0a43f4a60a98dedfaea58-meu-design-de-capa-de-livro-de-receitas-favorito.jpg",
-            "titulo": "Livro de Receita",
-            "descricao": "Se quer cozinhar algo gostoso, compre livros de receitas com tudo que precisa saber!",
-            "imgDireita": true,
-            "linkDetalhe": "https://globo.com"
-        }
-    ]
+
 
 export default function Inicio() {
 
@@ -71,9 +56,11 @@ export default function Inicio() {
                         />
                     )
                 }
-                
+                <div className="botao">
+                <button onClick={listarLivros} >Listar</button>
                 <button onClick={sair}>Sair</button>
-                <button onClick={listarLivros}>Listar</button>
+                </div>
+
             </div>
 
             <Footer />

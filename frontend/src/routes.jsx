@@ -9,7 +9,7 @@ export default function Navegacao () {
             <Routes>
                 <Route path="/" element={<Inicio />} />
                 <Route path="/sobre" element={<Sobre />} />
-                <Route path="/login" element={<Login />} />
+                <Route path="/entrar" element={<Login />} />
             </Routes>
         </BrowserRouter>
     );

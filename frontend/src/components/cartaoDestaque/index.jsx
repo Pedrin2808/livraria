@@ -8,7 +8,7 @@ export default function CartaoDestaque({imagem, titulo, descricao, imgDireita, l
             </div>
 
             <div className="info">
-                <h1>{titulo}</h1>
+                <h1 className='titulo'>{titulo}</h1>
                 <p>{descricao}</p>
                 <a href={linkDetalhe}>Clique aqui</a>
             </div>
