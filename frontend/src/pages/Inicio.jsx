@@ -1,6 +1,9 @@
+import { useEffect, useState } from "react";
+import { useNavigate } from "react-router";
+import api from "../api";
 import Cabecalho from "../components/cabecalho";
 import Footer from "../components/footer";
-import CartaoDestaque from "../components/cartaoDestaque";
+import CartaoDestaque from "../components/cartaoDestaque/index";
 import './inicio.scss';
 
 const cartoes =
@@ -21,6 +24,34 @@ const cartoes =
     ]
 
 export default function Inicio() {
+
+    const navigate = useNavigate();
+    const [usuario, setUsuario] = useState("");
+    const [livros, setLivros] = useState([])
+
+    useEffect(() => {
+        const nomeUsuario = localStorage.getItem("USUARIO")
+
+        // Se o usuário não estiver logado
+        if (nomeUsuario == undefined || nomeUsuario == null) {
+            navigate('/entrar')
+        } else {
+            setUsuario(nomeUsuario)
+        }
+    }, [])
+
+    function sair() {
+        localStorage.removeItem("USUARIO");
+        localStorage.removeItem("TOKEN");
+
+        navigate('/entrar')
+    }
+
+    async function listarLivros() {
+        const reponse = await api.get('/livros')
+        setLivros(reponse.data)
+    } 
+
     return (
         <div className="main">
 
@@ -40,7 +71,9 @@ export default function Inicio() {
                         />
                     )
                 }
-
+                
+                <button onClick={sair}>Sair</button>
+                <button onClick={listarLivros}>Listar</button>
             </div>
 
             <Footer />
